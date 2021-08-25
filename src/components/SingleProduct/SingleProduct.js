@@ -23,7 +23,7 @@ const SingleProduct = ({ pd }) => {
 
         <div className=" mx-auto w-64 md:w-80 border-2 px-2 rounded   mt-4 content-center">
             <div className="cardImage flex flex-col">
-                <img className="mx-auto h-64" src={imageUrl} alt="imageURL" />
+                <img className="mx-auto h-64" src={imageUrl} alt="" />
                 <p className="flex justify-evenly"><span>{name}</span> <span>৳{price}</span></p>
 
                 <Link to="/checkOut">

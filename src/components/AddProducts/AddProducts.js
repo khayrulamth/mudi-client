@@ -16,7 +16,7 @@ const AddProducts = () => {
             imageUrl: imageUrl
         };
         //sending data to backend
-        const url = `http://localhost:4000/addProducts`;
+        const url = `https://mudi-store.herokuapp.com/addProducts`;
         fetch(url, {
             method: 'POST',
             headers: {

@@ -19,7 +19,7 @@ const CheckOut = () => {
                     <p>Product: {name}</p>
                     <p>Price: {price} Tk.</p>
                     <button onClick={() => {
-                        fetch('http://localhost:4000/ordered', {
+                        fetch('https://mudi-store.herokuapp.com/ordered', {
                             method: 'POST',
                             headers: {
                                 'Content-Type': 'application/json'

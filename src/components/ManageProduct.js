@@ -9,7 +9,7 @@ const ManageProduct = () => {
     const [quantity, setQuantity] = useState('');
     let [event, setEvent] = useState('');
     useEffect(() => {
-        fetch('http://localhost:4000/products')
+        fetch('https://mudi-store.herokuapp.com/products')
             .then((res) => res.json())
             .then((data) => {
                 setProducts(data);
@@ -17,7 +17,7 @@ const ManageProduct = () => {
     }, [])
 
     const deleteProduct = (event, id) => {
-        fetch(`http://localhost:4000/delete/${id}`, {
+        fetch(`https://mudi-store.herokuapp.com/delete/${id}`, {
             method: 'DELETE',
         })
             .then(result => {
@@ -52,7 +52,7 @@ const ManageProduct = () => {
 
         const product = { name, quantity, price }
         console.log(product);
-        fetch(`http://localhost:4000/edit/${id}`, {
+        fetch(`https://mudi-store.herokuapp.com/edit/${id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(product)

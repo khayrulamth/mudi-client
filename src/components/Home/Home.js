@@ -6,7 +6,7 @@ const Home = () => {
     let [products, setProducts] = useState([{}]);
     let [reverse,setReverse] = useState([{}]);
     useEffect(() => {
-        fetch('http://localhost:4000/products')
+        fetch('https://mudi-store.herokuapp.com/products')
             .then((res) => res.json())
             .then((data) => {               
                 setReverse(data);
@@ -19,7 +19,7 @@ const Home = () => {
         <div className="all text-center mx-auto my-16">
             <p className=" text-green-700 text-center text-2xl border-b pb-4 mx-16">Pure Daily Needs At Your Door Steps </p>
             {
-                products.length === 0 && <ProgressBar ></ProgressBar>
+                products.length < 2 && <ProgressBar ></ProgressBar>
             }
             <div className=" grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mx-4 mt-4 text-center">
 

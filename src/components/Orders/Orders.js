@@ -8,7 +8,7 @@ const Orders = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:4000/previousOrders?email=`+loggedInUser.email,{
+        fetch(`https://mudi-store.herokuapp.com/previousOrders?email=`+loggedInUser.email,{
             method: 'GET',
             headers: { 'Content-Type': 'application/json',
             authorization: `Bearer ${sessionStorage.getItem('token')}`

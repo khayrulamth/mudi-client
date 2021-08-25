@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './components/Header/Header.js';
 import Home from './components/Home/Home.js';
-import AddProducts from './components/AddProducts/AddProducts.js';
 import Login from './components/Login/Login.js';
 import Deals from './components/Deals/Deals';
 import Orders from './components/Orders/Orders';
