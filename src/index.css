@@ -1,3 +1,17 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  a {
+    @apply mx-2 px-2 sm:text-xl sm:text-xl md:text-2xl hover:opacity-50;
+  }
+  .btn-green{
+    @apply px-4 pb-1 m-4 rounded bg-green-700 text-white
+  }
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
