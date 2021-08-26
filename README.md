@@ -1,6 +1,6 @@
 # This is a full stack mern project
 
-Live website -> [Mudi Store Live Website](https://mudi-store/netlify.app)
+Live website -> [Mudi Store Live Website](https://mudi-store.netlify.app/)
 
 # Database
 Mongodb
